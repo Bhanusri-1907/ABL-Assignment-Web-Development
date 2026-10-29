@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Urban Plate Cafe</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf8ed;
+            color: #333;
+        }
+
+        header {
+            background-color: #173d2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #244d38;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e6bd69;
+        }
+
+        section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #244d38;
+        }
+s
+        .hero {
+            background-color: #eee5d3;
+            padding: 30px 20px;
+        }
+
+        .hero img {
+            width: 90%;
+            max-width: 900px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #244d38;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #b58b3b;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #244d38;
+        }
+
+        .price {
+            color: #9b7428;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .info {
+            background-color: white;
+            max-width: 700px;
+            margin: 15px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px #ddd;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #244d38;
+            color: white;
+        }
+
+        form {
+            max-width: 450px;
+            margin: auto;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: #244d38;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b58b3b;
+        }
+
+        #message {
+            color: #244d38;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #173d2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #e6bd69;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .menu, .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .hero img {
+                width: 100%;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Urban Plate Café</h1>
+        <p>Good Food. Great Moments.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#chefs">Chefs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to The Urban Plate Café</h2>
+        <p>Enjoy delicious food, freshly prepared with love and care.</p>
+
+        <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+            alt="Beautiful restaurant interior">
+
+        <br>
+        <a href="#menu" class="btn">Explore Menu</a>
+        <a href="#reservation" class="btn">Reserve a Table</a>
+    </section>
+
+    <section id="about">
+        <h2>About Our Restaurant</h2>
+        <p>
+            The Urban Plate Café offers a welcoming atmosphere,
+            delicious meals and friendly service. We bring together
+            traditional flavors and modern dining to create
+            memorable moments with family and friends.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Food Menu</h2>
+        <p>Explore some of our favorite dishes.</p>
+
+        <div style="margin: 15px;">
+            <button onclick="filterMenu('All')">All</button>
+            <button onclick="filterMenu('Indian')">Indian</button>
+            <button onclick="filterMenu('Italian')">Italian</button>
+            <button onclick="filterMenu('Dessert')">Desserts</button>
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search for a dish..."
+            onkeyup="searchMenu()"
+            style="max-width: 400px;">
+
+        <div class="menu">
+
+            <div class="card" data-category="Indian">
+                <img
+                    src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80"
+                    alt="Indian food">
+                <h3>Paneer Curry</h3>
+                <p>Rich and flavorful Indian curry.</p>
+                <p>Vegetarian</p>
+                <p class="price">₹220</p>
+            </div>
+
+            <div class="card" data-category="Indian">
+                <img
+                    src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80"
+                    alt="Indian biryani">
+                <h3>Chicken Biryani</h3>
+                <p>Fragrant rice cooked with spices and chicken.</p>
+                <p>Non-Vegetarian</p>
+                <p class="price">₹280</p>
+            </div>
+
+            <div class="card" data-category="Italian">
+                <img
+                    src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80"
+                    alt="Italian pasta">
+                <h3>Italian Pasta</h3>
+                <p>Pasta with a delicious tomato sauce.</p>
+                <p>Vegetarian</p>
+                <p class="price">₹250</p>
+            </div>
+
+            <div class="card" data-category="Italian">
+                <img
+                    src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=600&q=80"
+                    alt="Fresh pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Classic pizza with cheese and tomato.</p>
+                <p>Vegetarian</p>
+                <p class="price">₹240</p>
+            </div>
+
+            <div class="card" data-category="Dessert">
+                <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+                    alt="Chocolate cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate dessert for sweet lovers.</p>
+                <p>Contains dairy and may contain eggs.</p>
+                <p class="price">₹150</p>
+            </div>
+
+            <div class="card" data-category="Dessert">
+                <img
+                    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+                    alt="Coffee">
+                <h3>Cappuccino</h3>
+                <p>Freshly prepared coffee with milk foam.</p>
+                <p>Vegetarian</p>
+                <p class="price">₹120</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="chefs">
+        <h2>Meet Our Chefs</h2>
+
+        <div class="info">
+            <h3>Chef Arjun</h3>
+            <p>Specializes in Indian cuisine and traditional flavors.</p>
+        </div>
+
+        <div class="info">
+            <h3>Chef Priya</h3>
+            <p>Specializes in desserts, cakes and bakery creations.</p>
+        </div>
+
+        <div class="info">
+            <h3>Chef Rahul</h3>
+            <p>Specializes in Italian dishes and modern recipes.</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Our Restaurant Gallery</h2>
+
+        <div class="gallery">
+            <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80"
+                alt="Fine dining table">
+
+            <img
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80"
+                alt="Restaurant dining area">
+
+            <img
+                src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=600&q=80"
+                alt="Freshly prepared food">
+        </div>
+    </section>
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="info">
+            <p>"Delicious food and a wonderful atmosphere!"</p>
+            <h4>- Ananya ★★★★★</h4>
+        </div>
+
+        <div class="info">
+            <p>"The service was friendly and the pasta was amazing."</p>
+            <h4>- Rahul ★★★★★</h4>
+        </div>
+
+        <div class="info">
+            <p>"A lovely place to enjoy a meal with family."</p>
+            <h4>- Priya ★★★★☆</h4>
+        </div>
+    </section>
+
+    <section id="hours">
+        <h2>Opening Hours</h2>
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Timings</th>
+            </tr>
+            <tr>
+                <td>Monday - Friday</td>
+                <td>10:00 AM - 10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>9:00 AM - 11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>9:00 AM - 10:00 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="reservation">
+        <h2>Reserve a Table</h2>
+        <p>Fill in the details to request a table reservation.</p>
+
+        <form id="bookingForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Full Name"
+                required>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="10-digit Phone Number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required>
+
+            <input
+                type="date"
+                id="date"
+                required>
+
+            <select id="time" required>
+                <option value="">Select Time</option>
+                <option>10:00 AM</option>
+                <option>12:00 PM</option>
+                <option>2:00 PM</option>
+                <option>6:00 PM</option>
+                <option>8:00 PM</option>
+            </select>
+
+            <select id="guests" required>
+                <option value="">Number of Guests</option>
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3 People</option>
+                <option>4 People</option>
+                <option>5 People</option>
+                <option>6 People</option>
+            </select>
+
+            <textarea
+                id="requests"
+                rows="4"
+                placeholder="Special Requests (Optional)"></textarea>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><b>Address:</b> Your Restaurant Address, Your City</p>
+        <p><b>Phone:</b> Add your contact number</p>
+        <p><b>Email:</b> Add your email address</p>
+        <p><b>Instagram:</b> <a href="https://www.instagram.com/">Visit Instagram</a></p>
+        <p>Map: Add your restaurant's map location here.</p>
+    </section>
+
+    <footer>
+        <h3>The Urban Plate Café</h3>
+        <p>Good Food. Great Moments.</p>
+        <p>
+            <a href="#home">Home</a> |
+            <a href="#menu">Menu</a> |
+            <a href="#reservation">Reservations</a>
+        </p>
+        <p>&copy; 2026 The Urban Plate Café. All Rights Reserved.</p>
+        <p>Sample website created for a Web Development assignment.</p>
+    </footer>
+
+</body>
+</html>
